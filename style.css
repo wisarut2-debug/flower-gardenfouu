@@ -1,0 +1,427 @@
+body {
+
+  margin: 0;
+
+  font-family: Arial, sans-serif;
+
+  background:
+    linear-gradient(
+      to bottom,
+      #ffd6e0,
+      #fff0f5
+    );
+
+  min-height: 100vh;
+
+  overflow: hidden;
+}
+
+/* หน้า */
+
+.page {
+
+  position: absolute;
+
+  width: 100%;
+
+  min-height: 100vh;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  opacity: 0;
+
+  visibility: hidden;
+
+  transition: 1s;
+}
+
+.page.active {
+
+  opacity: 1;
+
+  visibility: visible;
+}
+
+/* หน้าแรก */
+
+.container {
+
+  text-align: center;
+
+  z-index: 2;
+}
+
+h1 {
+
+  font-size: 3rem;
+
+  color: #ff4d88;
+
+  text-shadow:
+    0 0 10px rgba(255,255,255,0.6);
+}
+
+.subtitle {
+
+  font-size: 1.2rem;
+
+  color: #555;
+
+  margin-bottom: 20px;
+}
+
+/* ปุ่ม */
+
+button {
+
+  padding: 12px 24px;
+
+  border: none;
+
+  border-radius: 30px;
+
+  background-color: #ff8fab;
+
+  color: white;
+
+  font-size: 1rem;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+button:hover {
+
+  transform: scale(1.05);
+
+  background-color: #ff5c8a;
+}
+
+/* story card */
+
+.story-card {
+
+  width: 80%;
+
+  max-width: 700px;
+
+  background:
+    rgba(255,255,255,0.75);
+
+  backdrop-filter: blur(10px);
+
+  padding: 40px;
+
+  border-radius: 30px;
+
+  text-align: center;
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.08);
+
+  animation: fadeUp 1s;
+
+  transition: 0.5s;
+
+  z-index: 2;
+}
+
+.story-card h2 {
+
+  color: #ff5c8a;
+
+  font-size: 2rem;
+}
+
+.story-card p {
+
+  color: #555;
+
+  line-height: 1.8;
+
+  font-size: 1.1rem;
+
+  margin-bottom: 30px;
+
+  white-space: pre-line;
+}
+
+/* ending */
+
+.flower-ending {
+
+  text-align: center;
+
+  animation: fadeUp 2s;
+
+  z-index: 2;
+}
+
+.flower-ending img {
+
+  width: 320px;
+
+  max-width: 80%;
+
+  animation:
+    floatFlower 4s ease-in-out infinite;
+}
+
+.flower-ending p {
+
+  margin-top: 30px;
+
+  font-size: 1.3rem;
+
+  color: #ff4d88;
+
+  line-height: 1.8;
+
+  text-shadow:
+    0 0 10px rgba(255,255,255,0.5);
+}
+
+/* กลีบดอกไม้ */
+
+.petals {
+
+  position: fixed;
+
+  width: 100%;
+  height: 100%;
+
+  top: 0;
+  left: 0;
+
+  overflow: hidden;
+
+  pointer-events: none;
+}
+
+.petals span {
+
+  position: absolute;
+
+  top: -20%;
+
+  opacity: 0.4;
+
+  animation:
+    floatPetals linear infinite;
+}
+
+/* random positions */
+
+.petals span:nth-child(1) {
+  left: 3%;
+  font-size: 14px;
+  animation-duration: 11s;
+  animation-delay: 0s;
+}
+
+.petals span:nth-child(2) {
+  left: 12%;
+  font-size: 28px;
+  animation-duration: 18s;
+  animation-delay: 2s;
+}
+
+.petals span:nth-child(3) {
+  left: 20%;
+  font-size: 20px;
+  animation-duration: 13s;
+  animation-delay: 5s;
+}
+
+.petals span:nth-child(4) {
+  left: 27%;
+  font-size: 35px;
+  animation-duration: 20s;
+  animation-delay: 1s;
+}
+
+.petals span:nth-child(5) {
+  left: 33%;
+  font-size: 17px;
+  animation-duration: 15s;
+  animation-delay: 4s;
+}
+
+.petals span:nth-child(6) {
+  left: 40%;
+  font-size: 30px;
+  animation-duration: 22s;
+  animation-delay: 3s;
+}
+
+.petals span:nth-child(7) {
+  left: 48%;
+  font-size: 15px;
+  animation-duration: 12s;
+  animation-delay: 7s;
+}
+
+.petals span:nth-child(8) {
+  left: 54%;
+  font-size: 24px;
+  animation-duration: 17s;
+  animation-delay: 2s;
+}
+
+.petals span:nth-child(9) {
+  left: 61%;
+  font-size: 18px;
+  animation-duration: 19s;
+  animation-delay: 5s;
+}
+
+.petals span:nth-child(10) {
+  left: 68%;
+  font-size: 34px;
+  animation-duration: 14s;
+  animation-delay: 1s;
+}
+
+.petals span:nth-child(11) {
+  left: 73%;
+  font-size: 22px;
+  animation-duration: 16s;
+  animation-delay: 6s;
+}
+
+.petals span:nth-child(12) {
+  left: 79%;
+  font-size: 15px;
+  animation-duration: 21s;
+  animation-delay: 3s;
+}
+
+.petals span:nth-child(13) {
+  left: 84%;
+  font-size: 32px;
+  animation-duration: 13s;
+  animation-delay: 8s;
+}
+
+.petals span:nth-child(14) {
+  left: 89%;
+  font-size: 18px;
+  animation-duration: 18s;
+  animation-delay: 4s;
+}
+
+.petals span:nth-child(15) {
+  left: 94%;
+  font-size: 25px;
+  animation-duration: 15s;
+  animation-delay: 1s;
+}
+
+.petals span:nth-child(16) {
+  left: 7%;
+  font-size: 30px;
+  animation-duration: 24s;
+  animation-delay: 9s;
+}
+
+.petals span:nth-child(17) {
+  left: 37%;
+  font-size: 18px;
+  animation-duration: 12s;
+  animation-delay: 6s;
+}
+
+.petals span:nth-child(18) {
+  left: 58%;
+  font-size: 26px;
+  animation-duration: 20s;
+  animation-delay: 10s;
+}
+
+.petals span:nth-child(19) {
+  left: 76%;
+  font-size: 14px;
+  animation-duration: 15s;
+  animation-delay: 7s;
+}
+
+.petals span:nth-child(20) {
+  left: 97%;
+  font-size: 30px;
+  animation-duration: 19s;
+  animation-delay: 2s;
+}
+
+/* animations */
+
+@keyframes floatPetals {
+
+  0% {
+
+    transform:
+      translateY(0)
+      translateX(0)
+      rotate(0deg);
+
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0.4;
+  }
+
+  50% {
+
+    transform:
+      translateY(50vh)
+      translateX(30px)
+      rotate(180deg);
+  }
+
+  100% {
+
+    transform:
+      translateY(120vh)
+      translateX(-30px)
+      rotate(360deg);
+
+    opacity: 0;
+  }
+}
+
+@keyframes fadeUp {
+
+  from {
+
+    opacity: 0;
+
+    transform: translateY(30px);
+  }
+
+  to {
+
+    opacity: 1;
+
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatFlower {
+
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}

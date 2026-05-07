@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <title>Our Little Garden 🌸</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <!-- เพลง -->
+
+  <audio id="bgMusic" loop>
+    <source src="music/song.mp3" type="audio/mp3">
+  </audio>
+
+  <!-- กลีบดอกไม้ -->
+
+  <div class="petals">
+
+    <span>🌸</span>
+    <span>🌸</span>
+    <span>🌸</span>
+    <span>🌸</span>
+    <span>🌸</span>
+
+    <span>🌸</span>
+    <span>🌸</span>
+    <span>🌸</span>
+    <span>🌸</span>
+    <span>🌸</span>
+
+    <span>🌸</span>
+    <span>🌸</span>
+    <span>🌸</span>
+    <span>🌸</span>
+    <span>🌸</span>
+
+    <span>🌸</span>
+    <span>🌸</span>
+    <span>🌸</span>
+    <span>🌸</span>
+    <span>🌸</span>
+
+  </div>
+
+  <!-- หน้าแรก -->
+
+  <section id="page1" class="page active">
+
+    <div class="container">
+
+      <h1 id="title"></h1>
+
+      <p class="subtitle">
+        This little place is for you 🌷
+      </p>
+
+      <button onclick="startStory()">
+        Enter the garden
+      </button>
+
+    </div>
+
+  </section>
+
+  <!-- story -->
+
+  <section id="storyPage" class="page">
+
+    <div class="story-card">
+
+      <h2 id="storyTitle"></h2>
+
+      <p id="storyText"></p>
+
+      <button id="nextBtn"
+              onclick="nextStory()">
+        ต่อไป
+      </button>
+
+    </div>
+
+  </section>
+
+  <!-- ending -->
+
+  <section id="flowerPage" class="page">
+
+    <div class="flower-ending">
+
+      <img src="images/flower.png"
+           alt="flower bouquet">
+
+      <p>
+        ดอกไม้สำหรับคนน่ารักนะครับ 🌸
+        <br><br>
+        ปล. แทนอยากดูแลพี่นะครับ
+      </p>
+
+    </div>
+
+  </section>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
